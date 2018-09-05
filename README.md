@@ -33,16 +33,18 @@ This guide was last updated for Swift 4.0 on February 14, 2018.
 * **1.2** Avoid uncomfortably long lines with a hard maximum of 160 characters per line (Xcode->Preferences->Text Editing->Page guide at column: 160 is helpful for this)
 * **1.3** Ensure that there is a newline at the end of every file.
 * **1.4** Ensure that there is no trailing whitespace anywhere (Xcode->Preferences->Text Editing->Automatically trim trailing whitespace + Including whitespace-only lines).
-* **1.5** Do not place opening braces on new lines - we use the [1TBS style](https://en.m.wikipedia.org/wiki/Indentation_style#1TBS).
+* **1.5** Do not place opening braces on new lines. But place else and else if statements on next line after preceding closing brace.
 
 ```swift
 class SomeClass {
     func someMethod() {
         if x == y {
             /* ... */
-        } else if x == z {
+        } 
+        else if x == z {
             /* ... */
-        } else {
+        } 
+        else {
             /* ... */
         }
     }
