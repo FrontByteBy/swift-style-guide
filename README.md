@@ -1052,7 +1052,7 @@ class Pirate {
 
 See how a minor change to your commit message style can make you a better programmer.
 
-Format: `<type>(<scope>): <subject>`
+Format: `<type>(<scope>): <subject> \n \n <task ID><description>`
 
 `<scope>` is optional
 
@@ -1065,6 +1065,10 @@ feat: add hat wobble
 |     +-> Summary in present tense.
 |
 +-------> Type: chore, docs, feat, fix, refactor, style, or test.
+`empty line here`
+XXX-123 longer description
+|
++-> Jira task id
 ```
 
 More Examples:
