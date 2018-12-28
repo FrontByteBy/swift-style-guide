@@ -461,18 +461,20 @@ imageView.backgroundColor = .white
 
 * **3.1.12** When writing methods, keep in mind whether the method is intended to be overridden or not. If not, mark it as `final`, though keep in mind that this will prevent the method from being overwritten for testing purposes. In general, `final` methods result in improved compilation times, so it is good to use this when applicable. Be particularly careful, however, when applying the `final` keyword in a library since it is non-trivial to change something to be non-`final` in a library as opposed to have changing something to be non-`final` in your local project.
 
-* **3.1.13** When using a statement such as `else`, `catch`, etc. that follows a block, put this keyword on the same line as the block. Again, we are following the [1TBS style](https://en.m.wikipedia.org/wiki/Indentation_style#1TBS) here. Example `if`/`else` and `do`/`catch` code is below.
+* **3.1.13** When using a statement such as `else`, `catch`, etc. that follows a block, put this keyword on the next line after the block. Example `if`/`else` and `do`/`catch` code is below.
 
 ```swift
 if someBoolean {
     // do something
-} else {
+} 
+else {
     // do something else
 }
 
 do {
     let fileContents = try readFile("filename.txt")
-} catch {
+} 
+catch {
     print(error)
 }
 ```
